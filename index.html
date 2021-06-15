@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tarea de detección de texto</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/toxicity"></script>
+    <link rel="stylesheet" type="text/css" href="index.css">
+  </head>
+  <body>
+    <div id='main'>
+        <div class="titulo">
+      <h1>Clasificador de texto</h1>
+    </div>
+    <div><h2 style="justify-content: flex-start;">Ingrese el comentario, tiene que se en ingles</h2></div>
+    <form id="classify-new">
+        <input id="classify-new-text-input" placeholder="i.e. 'fuck you'" required="">
+        <div class="row">
+          <button id="classify-new-text" type="submit">Analizar</div>
+            <div class="loader"></div>
+          </div>
+        </form>
+   <div class="containerTable">
+      <div style="justify-content: flex-start;" id="table-wrapper">
+    <div style="background-color:  #952754;" class="row">
+          <div class="text" style="color:white">COMENTARIO</div>
+
+                <div class="text" style="color:white">NEGATIVO</div>
+                 
+        </div>
+    </div>
+    </div>
+   
+      </div>
+      <script type="text/javascript" src="index.js"></script>
+  
+  </body>
+
+</html> 
